@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: PO_input
+    columns:
+      - name: '"ID"'
+        tests:
+          - pm_utils.not_null
+          - pm_utils.unique
+
+  - name: INV_input
+    columns:
+      - name: '"ID"'
+        tests:
+          - pm_utils.not_null
+          - pm_utils.unique

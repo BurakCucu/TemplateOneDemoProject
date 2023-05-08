@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: Cases_base
+    tests:
+      - pm_utils.equal_rowcount:
+          compare_model: 'PO_input'
+    columns:
+      - name: '"Case_ID"'
+        tests:
+          - pm_utils.not_null
+          - pm_utils.unique
